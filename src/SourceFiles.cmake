@@ -10,6 +10,7 @@ core/functions.h
 core/manual.h
 gui/aboutbox.h
 gui/application.h
+gui/bitfielddock.h
 gui/bitfieldwidget.h
 gui/bookdock.h
 gui/constantsdock.h
@@ -43,6 +44,7 @@ core/pageserver.cpp
 core/settings.cpp
 gui/aboutbox.cpp
 gui/application.cpp
+gui/bitfielddock.cpp
 gui/bitfieldwidget.cpp
 gui/bookdock.cpp
 gui/constantsdock.cpp

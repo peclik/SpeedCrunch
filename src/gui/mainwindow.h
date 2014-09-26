@@ -25,7 +25,7 @@
 #include <QSystemTrayIcon>
 
 class AutoHideLabel;
-class BitFieldWidget;
+class BitFieldDock;
 class BookDock;
 class Constants;
 class ConstantsDock;
@@ -112,7 +112,7 @@ private slots:
     void setAutoAnsEnabled(bool);
     void setAutoCalcEnabled(bool);
     void setAutoCompletionEnabled(bool);
-    void setBitfieldVisible(bool);
+    void setBitfieldDockVisible(bool);
     void setConstantsDockVisible(bool);
     void setFormatsDockVisible(bool);
     void setFormulaBookDockVisible(bool);
@@ -186,7 +186,7 @@ private:
     void createMenus();
     void createStatusBar();
     void createFixedWidgets();
-    void createBitField();
+    void createBitFieldDock();
     void createBookDock();
     void createConstantsDock();
     void createFormatsDock();
@@ -204,7 +204,7 @@ private:
     void restoreVariables();
     void restoreUserFunctions();
     void deleteStatusBar();
-    void deleteBitField();
+    void deleteBitFieldDock();
     void deleteBookDock();
     void deleteConstantsDock();
     void deleteFormatsDock();
@@ -343,10 +343,10 @@ private:
         TipWidget* tip;
         QSystemTrayIcon* trayIcon;
         ManualWindow* manual;
-        BitFieldWidget* bitField;
     } m_widgets;
 
     struct {
+        BitFieldDock* bitField;
         BookDock* book;
         ConstantsDock* constants;
         FormatsDock* formats;
